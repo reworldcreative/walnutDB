@@ -11,8 +11,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
 
-EXPOSE 1337
+# EXPOSE 1337
 
-CMD ["npm", "start"]
+CMD ["npm", "run build"]
