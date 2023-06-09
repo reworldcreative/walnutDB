@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "consist": {
+      "type": "text"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "calorie": {
+      "type": "integer"
+    },
+    "term": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "currentPrice": {
+      "type": "integer"
+    },
+    "keeping": {
+      "type": "text"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Грецкий орех",
+        "Арахис",
+        "Миндаль",
+        "Фисташки",
+        "Кешью",
+        "Фундук",
+        "Кедр",
+        "Бразильский орех",
+        "Пекан",
+        "Макадамия"
+      ],
+      "default": "Грецкий орех"
+    },
+    "badge": {
+      "type": "enumeration",
+      "enum": [
+        "promotion",
+        "new"
+      ]
+    },
+    "badgeText": {
+      "type": "string"
+    },
+    "packageType": {
+      "type": "enumeration",
+      "enum": [
+        "вакуумная"
+      ]
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "грн."
+      ]
+    },
+    "from": {
+      "type": "boolean"
+    },
+    "taste": {
+      "type": "enumeration",
+      "enum": [
+        "sweet",
+        "salty"
+      ]
+    }
+  }
+}
