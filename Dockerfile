@@ -1,13 +1,9 @@
 
-
-# CMD ["npm", "run build"]
-
-
 FROM node:18
 
 WORKDIR /app
 
-COPY package*.json ./
+# COPY package*.json ./
 
 RUN npm install
 
