@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "walnutDB",
       script: "npm",
-      args: "start",
+      args: "run develop",
       env: {
         NODE_ENV: "production",
       },
